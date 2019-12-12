@@ -30,6 +30,12 @@ h2.left {
     text-align: left;
 }
 
+h3 {    
+    font: 400 24px/30px Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 p {
     margin-bottom: 20px;
 }
@@ -97,7 +103,20 @@ ul {
 }
 
 .product_benefits {
-    min-height: 420px;
+    width: 100%;
+    min-height: 420px; 
+    display: flex;
+    flex-wrap: wrap;     
+}
+
+.product_benefits h2 {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.product_benefits details {
+    width: 50%;
+    border: 1px solid #000;
 }
 
 .scrinshots {
@@ -110,7 +129,41 @@ ul {
 
 .buy_it_now {
     min-height: 655px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.buy_it_now h2 {
+    width: 100%;
+}
+
+.buy_it_now .tariff {
+    width: 300px;
+    border-radius: 7px;
+    background-color: #445161;
+    color: #fff;
+}
+
+.buy_it_now h3 {
+    margin-top: 10px;
+}
+
+.price {
+    width: 98%;
+    margin: 0 auto;
+    padding: 15px 0 15px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.price span { 
+    color: #445162;
+    font: 400 40px/30px Arial, sans-serif; 
+    }
+
+.price span::before {
+     content: "$";
+   }
 
 footer {
     min-height: 510px;
