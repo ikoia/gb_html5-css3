@@ -44,9 +44,13 @@ ul {
     list-style: none;
 }
 
+ol {
+    margin: 15px 0 15px 50px;
+}
+
 .paddings {
     padding: 50px;
-    box-sizing: padding-box;
+    box-sizing: border-box;
 }
 
 .dark-bg {
@@ -97,26 +101,53 @@ ul {
     max-width: 655px;
 }
 
-.about_product figure {
+.about_product video {
     position: absolute;
     left: calc(100% - 480px);
 }
 
 .product_benefits {
     width: 100%;
-    min-height: 420px; 
+    min-height: 420px;
     display: flex;
-    flex-wrap: wrap;     
+    flex-wrap: wrap;
 }
 
-.product_benefits h2 {
+.product_benefits h2, .buy_it_now h2, footer h2 {
     width: 100%;
-    border: 1px solid #000;
 }
 
 .product_benefits details {
     width: 50%;
-    border: 1px solid #000;
+    min-height: 100px;
+    padding-left: 42px;
+    box-sizing: border-box;
+}
+
+.product_benefits details summary {
+    position: relative;
+    display: block;
+    outline: none;
+}
+
+.product_benefits details summary::-webkit-details-marker {
+    display: none;
+}
+
+.product_benefits details summary:before {
+    position: absolute;
+    left: -42px;
+    top: 5px;
+    content: "+";
+    display: block;
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    background-color: #445161;
+    font-size: 45px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
 }
 
 .scrinshots {
@@ -131,42 +162,130 @@ ul {
     min-height: 655px;
     display: flex;
     flex-wrap: wrap;
-}
-
-.buy_it_now h2 {
-    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .buy_it_now .tariff {
     width: 300px;
+    margin: 0 20px 0 20px;
+    padding-bottom: 20px;
     border-radius: 7px;
     background-color: #445161;
+    font-size: 14px;
     color: #fff;
 }
 
 .buy_it_now h3 {
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
 .price {
     width: 98%;
+    display: block;
     margin: 0 auto;
     padding: 15px 0 15px 0;
     background-color: #fff;
+    color: #445162;
+    font: 400 40px/30px Arial, sans-serif;     
     text-align: center;
 }
 
-.price span { 
-    color: #445162;
-    font: 400 40px/30px Arial, sans-serif; 
-    }
-
-.price span::before {
+.price::before {
      content: "$";
    }
 
+.buy_it_now button, .contacts_form form input[type="submit"] {
+    width: 260px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font: 700 18px/18px Arial, sans-serif;
+    color: #445161;  
+    text-transform: uppercase;
+} 
+
+.buy_it_now button:hover {
+    background-color: #f5f5f5;
+}
+
+.buy_it_now button:focus {
+    outline: none;
+}   
+
 footer {
     min-height: 510px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .contacts_form {
+    width: 50%;
+}
+
+.contacts_form form {
+    width: 500px;
+}
+
+.contacts_form form .t_date, .contacts_form form textarea {
+    display: block;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    font: 400 16px/24px Arial, sans-serif;
+    color: #445161;
+    width: 82px;
+
+}    
+
+.contacts_form form .t_date {
+    height: 40px;
+}
+
+.contacts_form form .t_date, .contacts_form form textarea {
+    width: 500px;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.contacts_form form textarea {
+    resize: none;
+    height: 170px;
+}
+
+.contacts_form form input:focus, .contacts_form form textarea:focus {
+    outline: none;
+}
+
+
+::-webkit-input-placeholder {
+    color:#445161;
+}
+
+::-moz-placeholder {
+    color:#445161;
+}
+
+:-moz-placeholder {
+    color:#445161;
+}
+
+:-ms-input-placeholder {
+    color:#445161;
+}
+
+
+.contacts_form form input[type="submit"] {
+    width: 140px;
+} 
+
+.contacts_form form input[type="submit"]:hover {
+    background-color: #f5f5f5;
 }
 
 .copyright {
