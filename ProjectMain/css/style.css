@@ -1,0 +1,118 @@
+@import url('fonts.css');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    background-color: #fff;
+    font: 16px/24px Arial, sans-serif;
+    color: #333;
+}
+
+.wraper {
+    background-color: inherit;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header {
+    background: url('../img/top_bg.jpg') no-repeat #fff;
+    min-height: 1020px;
+}
+
+.main_menu ul {
+    list-style: none;
+    font: 300 14px/1.2 'montserrat', Arial, sans-serif;
+    color: #c7b299;
+}
+
+.main_menu ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.main_menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main_menu ul li a:hover {
+    color: #555;
+}
+
+.main_menu ul li a:active {
+    color: #c7b299;
+}
+
+main {
+    text-align: center;
+}
+
+.services {
+    min-height: 372px;
+}
+
+.offer {
+    background-color: #fbfaf8;
+}
+
+.offer .top_block {
+    min-height: 700px;   
+}
+
+.offer .bottom_block {
+    min-height: 150px;
+    background: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%) #291f1d;  
+}
+
+.latest_projects {
+    min-height: 1162px;
+} 
+
+.video_block {
+    min-height: 705px;    
+    background: url('../img/video_block_bg.jpg') no-repeat #555;
+} 
+
+.mobile_block {
+    min-height: 700px;
+    background-color: #fbfaf8;     
+}
+
+.counters {
+    min-height: 300px;
+    background: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%) #291f1d;     
+}
+
+.recent_posts {
+    min-height: 750px;     
+}
+
+.partners {
+    min-height: 489px; 
+    background: url('../img/partners_bg.jpg') no-repeat #555;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners img {
+    margin: 0 45px;
+}
+
+.contacts {
+    min-height: 510px;  
+    background-color: #191919;
+}
+
+.copyright {
+    min-height: 110px;   
+    background-color: #111;
+}

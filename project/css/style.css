@@ -165,7 +165,7 @@ ol {
     float: left;
 }
 
-.scrinshots .screen_item h3, .scrinshots .screen_item p {
+.scrinshots .screen_item figcaption h3, .scrinshots .screen_item figcaption p {
     margin-left: 200px;
     padding: 0 25px 0 15px;    
 } 
@@ -180,21 +180,18 @@ ol {
     width: 50%;
 } 
 
-.rewiews .rewiews_item figure {
+.rewiews .rewiews_item img {
     float: left;
-    width: 120px;
-    text-align: center;
-}
-
-.rewiews .rewiews_item figure img {
     border-radius: 50%;
+    margin-left: 10px;
+    text-align: center;
 }
 
 .rewiews .rewiews_item p {
     position: relative;
     border-radius: 5px;
     background-color: #f0f0f0;
-    margin-left: 120px;
+    margin: 0 15px 25px 100px;
     padding: 16px 20px 16px 15px;
     font: 400 italic 14px/18px Arial, sans-serif; 
 } 
@@ -266,9 +263,14 @@ ol {
     text-transform: uppercase;
 } 
 
-.buy_it_now button:hover, .buy_it_now button:active {
+.buy_it_now button:hover {
     background-color: #aaa;
     color: #fff;
+}
+
+.buy_it_now button:active {
+    background-color: #f5f5f5;
+    color: #445161;
 }
 
 .buy_it_now button:focus {
@@ -340,9 +342,14 @@ footer .contacts_form {
     width: 140px;
 } 
 
-.contacts_form form input[type="submit"]:hover, .contacts_form form input[type="submit"]:active {
+.contacts_form form input[type="submit"]:hover {
     background-color: #aaa;
     color: #fff;
+}
+
+.contacts_form form input[type="submit"]:active {
+    background-color: #f5f5f5;
+    color: #445161;
 }
 
 .social_icons span {
