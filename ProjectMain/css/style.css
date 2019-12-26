@@ -11,8 +11,18 @@ html, body {
 
 body {
     background-color: #fff;
-    font: 16px/24px Arial, sans-serif;
-    color: #333;
+    font: 300 14px/24px 'montserrat', Arial, sans-serif;
+    color: #8c8c8c;
+}
+
+h2 {
+    font: 600 30px/1.2 'raleway', Arial, sans-serif;
+    color: #555;
+}
+
+h3 {
+    font: 600 22px/1.2 'raleway', Arial, sans-serif;
+    color: #555;
 }
 
 .wraper {
@@ -27,6 +37,8 @@ header {
 }
 
 .main_menu ul {
+    float: left;
+    max-width: 700px;
     list-style: none;
     font: 300 14px/1.2 'montserrat', Arial, sans-serif;
     color: #c7b299;
@@ -50,12 +62,78 @@ header {
     color: #c7b299;
 }
 
+.top_karusel {
+    max-width: 600px;
+    margin-top: 400px;
+    text-align: center;
+    color: #fff;
+}
+
+.slider {
+
+}
+
+.slider span {
+    display: block;
+}
+
+.slider .big_text {
+
+}
+
+.slider .small_text {
+    
+}
+
 main {
     text-align: center;
 }
 
 .services {
     min-height: 372px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.services div {
+    max-width: 275px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.services div:after {
+    display: block;
+    margin: 30px auto 0 auto;
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+}
+
+.services div svg {
+    fill: #555;
+}
+
+.services div h3 {
+    margin: 20px 0;
+}
+
+.services div p {
+    font-weight: 400;
+}
+
+.services div:hover svg {
+    fill: #c7b299;
+}
+
+.services div:hover h3 {
+    color: #c7b299;
+}
+
+.services div:hover:after {
+    background-color: #c7b299;
 }
 
 .offer {
@@ -64,6 +142,13 @@ main {
 
 .offer .top_block {
     min-height: 700px;   
+}
+
+.offer .top_block p {
+    font: Montserrat;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;   
 }
 
 .offer .bottom_block {
@@ -87,7 +172,47 @@ main {
 
 .counters {
     min-height: 300px;
-    background: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%) #291f1d;     
+    background: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%) #291f1d; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;       
+}
+
+.counters div {
+    max-width: 140px;
+    margin: 0 40px;
+}
+
+.counters div:after {
+    display: block;
+    margin: 20px auto 0 auto;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.counters div svg {
+    fill: #c7b299;
+}
+
+.counters div span {
+    display: block;
+}
+
+.counters .quantity {
+    margin: 25px 0 20px 0;
+    font-size: 48px;
+    line-height: 36px;
+    font-weight: 200;
+    color: #fff;
+}
+
+.counters .description {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #c7b299;
 }
 
 .recent_posts {
